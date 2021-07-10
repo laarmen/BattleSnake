@@ -1,3 +1,4 @@
+use rocket::{get, launch, routes};
 
 #[get("/hello/<name>/<age>")]
 fn hello(name: &str, age: u8) -> String {
